@@ -28,8 +28,8 @@ a {
 /* Media query for small screens (less than 768 pixels wide) */
 @media (max-width: 767px) {
   .navbar {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -134,11 +134,11 @@ a {
 
 /* Main */
 .container-showcase {
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .showcase {
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 150px;
   background: rgb(0, 0, 0) !important;
 }
@@ -198,9 +198,29 @@ p {
 }
 
 .container-about {
-  padding-top: 0px;
+  padding-top: 50px;
   padding-bottom: 110px;
   text-align: center;
+}
+
+/* Default styles */
+.img-large {
+  display: block;
+}
+
+.img-mobile {
+  display: none;
+}
+
+/* Media query for phones */
+@media (max-width: 767px) {
+  .img-large {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
 }
 
 
