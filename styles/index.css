@@ -25,6 +25,14 @@ a {
   padding-right: 70px;
 }
 
+/* Media query for small screens (less than 768 pixels wide) */
+@media (max-width: 767px) {
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .navbar-brand img {
   padding-top: 4px;
   display: block;
@@ -126,12 +134,12 @@ a {
 
 /* Main */
 .container-showcase {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .showcase {
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   background: rgb(0, 0, 0) !important;
 }
 
