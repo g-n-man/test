@@ -1,0 +1,380 @@
+/* Header */
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --primary-color-highlight: rgb(0, 0, 0);
+  --bs-body-bg: #000000;
+  --bs-body-font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 2000px;  
+  padding-top: 30px;
+  background-color: var(--bs-body-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-color) !important;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navbar-brand img {
+  padding-top: 4px;
+  display: block;
+}
+
+.nav-link,
+.btn-header {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: "Overpass", sans-serif;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: rgb(118, 118, 118);
+}
+
+.btn-header {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.btn-header:hover {
+  background-color: rgb(57, 57, 57);
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.navbar-toggler {
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg)
+}
+
+/* Main */
+.container-showcase {
+  margin-top: 100px;
+}
+
+.showcase {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: rgb(0, 0, 0) !important;
+}
+
+h1 {
+  color: white;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 25px;
+}
+
+/* Media query for small screens (less than 768 pixels wide) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.h1-showcase {
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
+  color:#33D52F;
+}
+
+h2 {
+  font-family: "Rubik Mono One", monospace;
+  color: white;
+  font-size: 30px;
+}
+
+.h2-showcase {
+  font-family: "Rubik Mono One", monospace;
+  color: white;
+  font-size: 35px;
+}
+
+/* Media query for small screens (less than 768 pixels wide) */
+@media (max-width: 767px) {
+  .h2-showcase {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+}
+
+p {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+}
+
+.about {
+  background-color: rgb(0, 0, 0);
+}
+
+.container-about {
+  padding-top: 0px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+
+
+
+.content {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(65, 65, 65) 0%, rgb(37, 37, 41) 38%, rgba(0,0,0,1) 80%);
+}
+
+h3- {
+  font-family: 'Chonburi', serif;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+
+/* Media query for large screens (wider than 992 pixels) */
+@media (min-width: 992px) {
+  .card-whole {
+    max-width: 40%; 
+    margin: auto;   
+  }
+}
+
+/* Media query for medium screens (768 - 991 pixels wide) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-whole {
+    max-width: 30%;
+    margin: auto;  
+  }
+}
+
+.card-whole:hover {
+  transform: scale(1.005);
+  box-shadow: 0 0 10px 5px rgb(162, 162, 162);
+  border: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.card-whole:active {
+  background-color: rgb(87, 87, 87) !important;
+  transform: scale(1.005);
+  box-shadow: 0 0 10px 5px rgb(162, 162, 162);
+  border: rgb(255, 255, 255);
+}
+
+.card-title {
+  font-family: 'Fira Mono', monospace;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.card-text {
+  font-family: 'Fira Mono', monospace;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 19px;
+}
+
+.btn:hover {
+  background-color: rgb(104, 104, 104);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.btn-view {
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Monda', sans-serif;
+}
+
+.btn-view:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-view:active {
+  background-color: rgb(67, 67, 67) !important;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer-dark {
+  background-image: url('../assets/footer_bg.png') !important;
+  background-color: rgb(0, 0, 0) !important;
+  border: none !important;
+  border-width: 0 !important;
+  padding-top: 65px;
+  padding-bottom: 10px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+/* Media query for large screens (wider than 992 pixels) */
+@media (min-width: 992px) {
+  .footer-logo {
+    max-width: 25%;   
+  }
+}
+
+/* Media query for medium screens (768 - 991 pixels wide) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-logo {
+    max-width: 3%;   
+  }
+}
+
+/* Media query for small screens (less than 768 pixels wide) */
+@media (max-width: 767px) {
+  .footer-logo {
+    max-width: 35%;
+    display: block;
+    margin: 0 auto; /* Center the logo */
+  }
+}
+
+.footer-text {
+  color: rgb(255, 255, 255);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer-text:hover {
+  color: rgb(167, 167, 167);
+  text-decoration: underline;
+}
+
+.footer-left-div, .footer-right-div {
+  width: 100%; /* Make both divs take full width */
+}
+
+/* Media query for large screens (wider than 992 pixels) */
+@media (min-width: 992px) {
+  .footer-right-div {
+    text-align: end;
+  }
+}
+
+/* Media query for medium screens (768 - 991 pixels wide) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-right-div {
+    text-align: end;
+  }
+}
+
+/* Media query for small screens (less than 768 pixels wide) */
+@media (max-width: 767px) {
+  .footer-left-div, 
+  .footer-right-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.copyright {
+  color: rgb(0, 255, 26);
+  text-align: center;
+  font-size: 13px;
+  margin-top: 70px;
+}
