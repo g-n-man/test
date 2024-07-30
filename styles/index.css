@@ -204,6 +204,7 @@ p {
 
 .about {
   background-color: rgb(0, 0, 0);
+  align-items: center;
 }
 
 .container-about {
@@ -244,99 +245,88 @@ p {
 
   .img-mobile {
     display: block;
-    width: 100%;
   }
 }
 
 
 
 
-.content {
-  background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgb(65, 65, 65) 0%, rgb(37, 37, 41) 38%, rgba(0,0,0,1) 80%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.protocols-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-h3- {
-  font-family: 'Chonburi', serif;
-  color: white;
-  font-size: 45px;
-  text-align: center;
+.protocol {
+  flex: 1;
+  max-width: 250px;
+  margin: 20px;
 }
 
-/* Media query for large screens (wider than 992 pixels) */
-@media (min-width: 992px) {
-  .card-whole {
-    max-width: 40%; 
-    margin: auto;   
-  }
+.protocol-icon {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-/* Media query for medium screens (768 - 991 pixels wide) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .card-whole {
-    max-width: 30%;
-    margin: auto;  
-  }
-}
-
-.card-whole:hover {
-  transform: scale(1.005);
-  box-shadow: 0 0 10px 5px rgb(162, 162, 162);
-  border: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.card-whole:active {
-  background-color: rgb(87, 87, 87) !important;
-  transform: scale(1.005);
-  box-shadow: 0 0 10px 5px rgb(162, 162, 162);
-  border: rgb(255, 255, 255);
-}
-
-.card-title {
-  font-family: 'Fira Mono', monospace;
-  font-size: 25px;
-  color: white;
-  text-align: center;
-}
-
-.card-text {
-  font-family: 'Fira Mono', monospace;
+.protocol-title {
+  font-family: 'Overpass', sans-serif;
+  color: #33D52F;
   font-size: 20px;
-  color: white;
-  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.btn {
-  border-radius: 50px;
+.protocol-features {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.protocol-link {
+  font-family: 'Overpass', sans-serif;
+  text-decoration: underline;
+  color: white;
+}
+
+.protocol-link:hover {
+  color: rgb(167, 167, 167);
+}
+
+.protocol-link:hover {
+  text-decoration: underline;
+}
+
+.btn-connect {
+  margin: 20px;
+  font-weight: 600;
+  border-radius: 10px;
   background-color: white;
   color: black;
-  font-size: 19px;
+  padding: 8px 16px;
+  font-size: 16px;
 }
 
-.btn:hover {
-  background-color: rgb(104, 104, 104);
+.btn-connect:hover {
+  background-color: rgb(57, 57, 57);
+  color: rgb(255, 255, 255);
   transform: scale(1.05);
   transition: all 0.5s;
-}
-
-.btn-view {
-  border: 0px;
-  margin-top: 0px;
-  margin-bottom: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Monda', sans-serif;
-}
-
-.btn-view:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-}
-
-.btn-view:active {
-  background-color: rgb(67, 67, 67) !important;
 }
 
 
