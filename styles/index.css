@@ -256,6 +256,52 @@ p {
 
 
 
+.why-title {
+  font-family: 'Overpass', sans-serif;
+  color: #33D52F;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-text {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 45px;
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about .col-lg-4, .about .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .why-title {
+    font-size: 20px;
+  }
+
+  .why-text {
+    font-size: 20px;
+  }
+
+  .about .col-lg-4, .about .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
 
 
 
@@ -269,12 +315,18 @@ p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .protocol {
   flex: 1;
   max-width: 250px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .protocol-icon {
@@ -294,7 +346,7 @@ p {
 .protocol-features {
   font-family: 'Overpass', sans-serif;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -302,6 +354,8 @@ p {
   font-family: 'Overpass', sans-serif;
   text-decoration: underline;
   color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .protocol-link:hover {
@@ -329,7 +383,36 @@ p {
   transition: all 0.5s;
 }
 
+/* Media query for small screens (less than 768 pixels wide) */
+@media (max-width: 767px) {
+  .protocols-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .protocol {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .protocol-icon {
+    width: 80px;
+  }
+
+  .protocol-title {
+    font-size: 20px;
+  }
+
+  .protocol-features {
+    font-size: 20px;
+  }
+
+  .btn-connect {
+    width: 80%;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
 
 
 
