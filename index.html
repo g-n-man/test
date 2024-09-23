@@ -1,46 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
     <style>
       #threedd {
         width: 100%;
-        height: 70vh;
+        height: 80vh; /* 70% of the viewport height */
         margin-left: auto;
-        margin-right: auto;
-        display: block;
+        margin-right: auto; /* Centers the model */
       }
     </style>
   </head>
   <body>
-    <!-- Placeholder Text to Check if the Body Loads -->
-    <h1>3D Model Viewer</h1>
 
-    <model-viewer
-      id="threedd"
-      src="./3d_model_baked_darker.glb"
-      camera-controls
-      alt="3D model"
-    >
+    <model-viewer id="threedd" src="./3d_model_baked_darker.glb" camera-controls touch-action="pan-y" loading="lazy" reveal="auto" auto-rotate>
     </model-viewer>
 
-    <!-- Script to Load Model Viewer -->
-    <script
-      type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
-    ></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const modelViewer = document.getElementById("threedd");
-        if (!modelViewer) {
-          console.error("Model viewer failed to load");
-        } else {
-          console.log("Model viewer loaded successfully");
-        }
-      });
-    </script>
+
+
   </body>
 </html>
